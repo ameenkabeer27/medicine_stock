@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medicine Purchase Entry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Medicine Purchase Entry</h1>
+
+  <form id="entryForm">
+    <div class="form-row">
+      <label>Purchased From</label>
+      <input type="text" name="purchased_from" required>
+    </div>
+
+    <div class="form-row">
+      <label>Med Received Date</label>
+      <input type="date" name="med_received_date">
+    </div>
+
+    <div class="form-row">
+      <label>Purchase Type</label>
+      <input type="text" name="purchase_type">
+    </div>
+
+    <div class="form-row">
+      <label>Product Type</label>
+      <input type="text" name="product_type">
+    </div>
+
+    <div class="form-row">
+      <label>Item Name</label>
+      <input type="text" name="item_name">
+    </div>
+
+    <div class="form-row">
+      <label>Brand Name</label>
+      <input type="text" name="brand_name">
+    </div>
+
+    <div class="form-row">
+      <label>Buying Unit</label>
+      <input type="text" name="buying_unit">
+    </div>
+
+    <div class="form-row">
+      <label>Selling Unit</label>
+      <input type="text" name="selling_unit">
+    </div>
+
+    <div class="form-row">
+      <label>Unit Ratio</label>
+      <input type="number" step="0.01" name="unit_ratio">
+    </div>
+
+    <div class="form-row">
+      <label>Tax %</label>
+      <input type="number" step="0.01" name="tax_percent">
+    </div>
+
+    <div class="form-row">
+      <label>MRP</label>
+      <input type="number" step="0.01" name="mrp">
+    </div>
+
+    <div class="form-row">
+      <label>Buying Price Before Tax</label>
+      <input type="number" step="0.01" name="buying_price_bt">
+    </div>
+
+    <div class="form-row">
+      <label>Selling Price Before Tax</label>
+      <input type="number" step="0.01" name="selling_price_bt">
+    </div>
+
+    <div class="form-row">
+      <label>Purchase Quantity</label>
+      <input type="number" step="0.01" name="purchase_quantity">
+    </div>
+
+    <div class="form-row">
+      <label>Item Stock</label>
+      <input type="number" step="0.01" name="item_stock">
+    </div>
+
+    <div class="form-row">
+      <label>Batch Number</label>
+      <input type="text" name="batch_number">
+    </div>
+
+    <div class="form-row">
+      <label>Expiry Date</label>
+      <input type="date" name="expiry_date">
+    </div>
+
+    <div class="form-row">
+      <label>Bill Received Date</label>
+      <input type="date" name="bill_received_date">
+    </div>
+
+    <div class="form-row">
+      <label>Invoice No.</label>
+      <input type="text" name="invoice_no">
+    </div>
+
+    <div class="form-row">
+      <label>Stock Updated Date</label>
+      <input type="date" name="stock_updated_date">
+    </div>
+
+    <div class="form-row">
+      <label>Remarks</label>
+      <textarea name="remarks" rows="3"></textarea>
+    </div>
+
+    <button type="submit">Save Entry (local)</button>
+  </form>
+
+  <h2>Saved Entries (This Browser Only)</h2>
+  <table id="entriesTable">
+    <thead>
+      <tr>
+        <th>Purchased From</th>
+        <th>Med Received Date</th>
+        <th>Item Name</th>
+        <th>Brand</th>
+        <th>Batch</th>
+        <th>Expiry</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="main.js"></script>
+</body>
+</html>
